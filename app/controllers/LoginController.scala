@@ -1,13 +1,11 @@
 package controllers
 
 import javax.inject._
-import views._
-import models.{Login, Registration, User}
+
+import models.Login
 import org.mindrot.jbcrypt.BCrypt
-import play.api._
 import play.api.mvc._
 
-import scala.concurrent.duration.Duration
 import scala.concurrent.{ExecutionContext, Future}
 
 @Singleton
