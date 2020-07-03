@@ -3,22 +3,20 @@ package controllers
 
 import javax.inject.Inject
 import models._
-import play.api.mvc
 import reactivemongo.play.json.collection.JSONCollection
 import play.api.Logging
 
-import scala.concurrent.{ExecutionContext, Future}
+import scala.concurrent.Future
 import reactivemongo.play.json._
 import collection._
 import models.JsonFormats._
 import org.mindrot.jbcrypt.BCrypt
-import play.api.libs.json.{JsValue, Json}
+import play.api.libs.json.Json
 import reactivemongo.api.Cursor
 import play.modules.reactivemongo.{ReactiveMongoApi, ReactiveMongoComponents}
 import reactivemongo.api.commands.WriteResult
 
 import scala.concurrent.ExecutionContext.Implicits.global
-
 
 class MongoService @Inject()(
                               val reactiveMongoApi: ReactiveMongoApi

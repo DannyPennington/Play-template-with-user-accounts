@@ -10,4 +10,3 @@ object JsonFormats {
 
   implicit val userFormat:OFormat[User] = Json.format[User]
 }
-

@@ -3,13 +3,9 @@ package controllers
 import javax.inject._
 import models.{Registration, User}
 import org.mindrot.jbcrypt.BCrypt
-import play.api._
-import play.api.i18n.{Messages, MessagesImpl}
 import play.api.mvc._
 import play.api.Logger
-
-import scala.concurrent.duration.Duration
-import scala.concurrent.{ExecutionContext, Future}
+import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
 
 @Singleton
@@ -48,5 +44,4 @@ class RegistrationController @Inject()(val components: ControllerComponents,
 
     })
   }
-
 }
