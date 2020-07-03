@@ -10,6 +10,7 @@ resolvers += "Akka Snapshot Repository" at "https://repo.akka.io/snapshots/"
 
 scalaVersion := "2.12.11"
 
+
 libraryDependencies ++= Seq( jdbc , ehcache , ws , specs2 % Test , guice,
   "org.reactivemongo" %% "play2-reactivemongo" % "0.20.11-play28",
   "org.slf4j" % "slf4j-api" % "1.7.30",

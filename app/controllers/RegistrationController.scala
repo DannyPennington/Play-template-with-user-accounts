@@ -44,5 +44,4 @@ class RegistrationController @Inject()(val components: ControllerComponents,
 
     })
   }
-
 }

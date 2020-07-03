@@ -11,5 +11,4 @@ object Login {
       "password" -> nonEmptyText
     )(Login.apply)(Login.unapply)
   )
-
 }

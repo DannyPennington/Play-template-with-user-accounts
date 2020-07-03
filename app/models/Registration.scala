@@ -12,5 +12,4 @@ object Registration {
       "password" -> nonEmptyText
     )(Registration.apply)(Registration.unapply)
   )
-
 }

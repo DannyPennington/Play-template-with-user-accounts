@@ -18,7 +18,6 @@ import reactivemongo.api.commands.WriteResult
 
 import scala.concurrent.ExecutionContext.Implicits.global
 
-
 class MongoService @Inject()(
                               val reactiveMongoApi: ReactiveMongoApi
                             ) extends ReactiveMongoComponents with Logging {
